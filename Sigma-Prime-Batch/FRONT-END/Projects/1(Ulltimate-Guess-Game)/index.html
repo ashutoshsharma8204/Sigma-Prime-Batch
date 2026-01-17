@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="neon">
+
+<div class="game-card">
+  <h1>🎮 Guess The Number</h1>
+
+  <div class="stats">
+    <span>🔥 Streak: <b id="streak">0</b></span>
+    <span>🏆 High: <b id="highScore">0</b></span>
+  </div>
+
+  <div class="section">
+    <select id="difficulty">
+      <option value="20">Easy (1–20)</option>
+      <option value="50">Medium (1–50)</option>
+      <option value="100">Hard (1–100)</option>
+    </select>
+
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div class="section">
+    <input type="number" id="guess" placeholder="Enter your guess" disabled>
+    <button id="guessBtn" onclick="checkGuess()" disabled>Guess</button>
+  </div>
+
+  <p id="message"></p>
+
+  <div class="controls">
+    <select onchange="changeTheme(this.value)">
+      <option value="neon">Neon</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+      <option value="glass">Glass</option>
+    </select>
+
+    <button onclick="toggleSound()">🔊</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
