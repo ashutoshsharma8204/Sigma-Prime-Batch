@@ -1,0 +1,17 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Ashutosh Sharma",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "random": "^5.4.1",
+    "random-words": "^2.0.1",
+    "words": "^0.3.0"
+  }
+}
